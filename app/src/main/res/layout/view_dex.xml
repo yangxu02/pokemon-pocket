@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/dex_base_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_large"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|end"
+        >
+
+      <ImageView
+          android:id="@+id/pokemon_image"
+          android:layout_width="wrap_content"
+          android:layout_height="72dp"
+          android:layout_gravity="center_horizontal"
+          />
+
+      <TextView
+          android:id="@+id/pokemon_name_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:textColor="@color/blue"
+          android:textSize="16sp"
+          />
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <View
+      android:id="@+id/dash_line"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/shape_horizontal_dashed_line"
+      android:layout_marginTop="@dimen/spacing_xsmall"
+      android:layout_marginBottom="@dimen/spacing_xsmall"
+      android:layerType="software"
+      android:orientation="horizontal"
+      />
+
+  <LinearLayout
+      android:id="@+id/dex_additional_container"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+  </LinearLayout>
+</LinearLayout>
